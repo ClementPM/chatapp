@@ -1,7 +1,20 @@
 @import 'semantic-ui';
 
-.chatbox {
-  height: 450px;
+body{
+  overflow-y: hidden;
 }
 
+.chatbox {
+  height: 350px;
+}
+
+.wave {
+position: relative;
+}
+
+.text{
+margin-top: 150px;
+position: absolute;
+z-index: 4;
+}
 
