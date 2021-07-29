@@ -6,6 +6,12 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
+import '@doabit/semantic-ui-sass'
 
 Rails.start()
 Turbolinks.start()
+
+$(document).on('turbolinks:load', function() {
+  $('.ui.dropdown')
+  .dropdown();
+})
