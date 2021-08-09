@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def create
     message = current_user.messages.build(message_params) #Build is similar to new - the big difference is it creates the new object and adds it to a collection of existing objects, or starts the collection.
     if message.save
-      redirect_to root_path
+      ActionCable.server.broadcast "chatroom_channel", foo: message.body
     end
   end
   
