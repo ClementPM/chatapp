@@ -1,5 +1,5 @@
 import consumer from "./consumer";
-import scroll_bottom from "../packs/application";
+// import scroll_bottom from "../packs/application";
 
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {

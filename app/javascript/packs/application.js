@@ -16,9 +16,9 @@ Turbolinks.start()
 // import JQuery from 'jquery';
 // window.$ = window.jQuery = JQuery;
 
-$(function(){
-  $('.ui.dropdown').dropdown();
-})
+// $(function(){
+//   $('.ui.dropdown').dropdown();
+// })
 
 const scroll_bottom = function() {
   if ($('#messages').length > 0) {
@@ -28,7 +28,7 @@ const scroll_bottom = function() {
 
 const submit_message = function() {
   $('#message_body').on('keydown', function(e) {
-    if (e.keyCode == 13) {
+    if (e.key == 'Enter') {
       $('button').click();
       e.target.value = "";
     };
