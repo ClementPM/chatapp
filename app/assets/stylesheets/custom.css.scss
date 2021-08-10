@@ -18,3 +18,13 @@ position: absolute;
 z-index: 4;
 }
 
+#messages {
+  height: 15em;
+  overflow: auto;
+}
+
+.input{
+  button {
+    display: none;
+  }
+}
